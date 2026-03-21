@@ -1,0 +1,3 @@
+*.xmind
+__pycache__/
+*.pyc
