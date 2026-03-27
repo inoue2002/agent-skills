@@ -15,7 +15,6 @@ Skills follow the [Agent Skills](https://agentskills.io/) format.
 | **secretary** | Cosenseの日付ページからタスク管理・優先度提案・持ち越し検出を行う秘書エージェント |
 | **xmind** | XMindマインドマップファイル(.xmind)をMarkdown形式に変換 |
 | **ship-app** | React NativeでiPhoneアプリを作成し、ビルド〜App Store提出まで自動化 |
-| **x-browse** | browser-use CLI 2.0でX（旧Twitter）のブックマーク・タイムラインを巡回しCosenseにレポート |
 | **youtube-transcript** | YouTube動画の文字起こし・字幕抽出 |
 
 ## Installation
