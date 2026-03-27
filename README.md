@@ -30,6 +30,12 @@ Each skill contains:
 - `scripts/` - Helper scripts for automation (optional)
 - `references/` - Supporting documentation (optional)
 
+## Private Skills
+
+Non-public skills are available in a separate private repository:
+
+- [inoue2002/agent-skills-private](https://github.com/inoue2002/agent-skills-private) (requires access)
+
 ## License
 
 MIT
