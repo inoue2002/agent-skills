@@ -1,16 +1,17 @@
-# Nano Banana 2 Image Skill
+# Nano Banana Image Skill
 
-Google Gemini API の Nano Banana 2 機能を使った画像生成スキル for [Claude Code](https://docs.anthropic.com/en/docs/claude-code).
+Google Gemini API（Interactions API）の Nano Banana 機能を使った画像生成スキル for [Claude Code](https://docs.anthropic.com/en/docs/claude-code).
 
 ## 機能
 
 - テキストから画像生成
-- 画像から画像生成（image-to-image）
+- 画像から画像生成（image-to-image、参照画像最大14枚）
 - 画像編集（背景変更、要素追加/削除など）
 - 複数バリエーション生成
-- アスペクト比・解像度指定（0.5K〜4K）
+- アスペクト比・解像度指定（512px〜4K）
 - 高精度テキストレンダリング
-- Google検索グラウンディング
+- Google検索グラウンディング（Web検索・画像検索）
+- 思考レベル制御（thinking_level）
 
 ## インストール
 
@@ -46,10 +47,11 @@ Claude Code で以下のような依頼をすると、このスキルが自動�
 
 ## モデル
 
-| モデル | 特徴 |
-|--------|------|
-| Nano Banana 2 (`flash`, デフォルト) | Pro品質×Flash速度 |
-| Nano Banana Pro (`pro`) | 高度なコンテキスト対応 |
+| モデル | モデル名 | 特徴 |
+|--------|---------|------|
+| Nano Banana 2 (`flash`, デフォルト) | gemini-3.1-flash-image | 万能・Pro品質×Flash速度 |
+| Nano Banana 2 Lite (`lite`) | gemini-3.1-flash-lite-image | 最速・最安（1Kのみ） |
+| Nano Banana Pro (`pro`) | gemini-3-pro-image | プロ品質・複雑な指示向け |
 
 ## ライセンス
 

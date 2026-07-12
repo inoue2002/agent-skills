@@ -158,11 +158,23 @@
 
 ```bash
 # 最新のファッショントレンドを反映
-python scripts/generate_image.py "最新のファッショントレンドを着た女性" --search -o fashion.png
+python scripts/generate_image.py "最新のファッショントレンドを着た女性" --search -o fashion.jpg
 
 # 最新のスマートフォンデザインを参考に
-python scripts/generate_image.py "最新のスマートフォンのコンセプトデザイン" --search -o phone.png
+python scripts/generate_image.py "最新のスマートフォンのコンセプトデザイン" --search -o phone.jpg
 ```
+
+`--image-search` オプション（flashのみ）でGoogle画像検索の実画像を参照し、実在の被写体を正確に再現。
+
+```bash
+# 実在の鳥を正確に描画
+python scripts/generate_image.py "ケツァール鳥が花に止まっている精密な絵画" --image-search -o quetzal.jpg
+
+# Web検索と画像検索の併用
+python scripts/generate_image.py "最新モデルの車を正確に描いたポスター" --search --image-search -o car.jpg
+```
+
+※ 画像検索グラウンディングでは実在の人物のWeb画像は参照できない。
 
 ---
 
